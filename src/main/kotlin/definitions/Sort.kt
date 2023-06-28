@@ -22,4 +22,14 @@ abstract  class Sort<T> {
         println()
     }
 
+    fun <T: Comparable<T>> isSorted(array: Array<T>): Boolean {
+        for (i in 1 until array.size) {
+            if (isLesser(array[i], array[i-1])) {
+                return false
+            }
+        }
+
+        return true
+    }
+
 }
