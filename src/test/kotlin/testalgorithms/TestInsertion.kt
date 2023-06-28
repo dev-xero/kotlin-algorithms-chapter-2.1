@@ -15,9 +15,10 @@ class TestInsertion {
 
     @Test
     fun testInsertionSortsCorrectly() {
-        val testChars = arrayOf('S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E')
+        val testChars: Array<Char> = arrayOf('S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E')
         insertion.sort(testChars)
 
         assertTrue(insertion.isSorted(testChars))
+        insertion.show(testChars)
     }
 }
