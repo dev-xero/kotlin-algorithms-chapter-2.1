@@ -3,7 +3,7 @@ package algorithms
 import definitions.Sort
 
 class Selection<T> : Sort<T>() {
-    override fun sort(array: Array<Comparable<T>>) {
+    override fun <T: Comparable<T>> sort(array: Array<T>) {
         val size = array.size
 
         for (i in 0 until size) {

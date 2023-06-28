@@ -2,13 +2,13 @@ package definitions
 import kotlin.Comparable
 
 abstract  class Sort<T> {
-    abstract fun sort(array: Array<Comparable<T>>)
+    abstract fun <T: Comparable<T>> sort(array: Array<T>)
 
     fun <T: Comparable<T>> isLesser(v: T, w: T): Boolean {
         return v < w
     }
 
-    fun exchange(array: Array<Comparable<T>>, i: Int, j: Int) {
+    fun <T: Comparable<T>> exchange(array: Array<T>, i: Int, j: Int) {
         val temp = array[i]
 
         array[i] = array[j]
