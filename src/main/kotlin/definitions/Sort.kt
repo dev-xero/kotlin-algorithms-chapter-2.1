@@ -4,7 +4,7 @@ import kotlin.Comparable
 abstract  class Sort<T> {
     abstract fun sort(array: Array<Comparable<T>>)
 
-    fun isLesser(v: Comparable<T>, w: T): Boolean {
+    fun <T: Comparable<T>> isLesser(v: T, w: T): Boolean {
         return v < w
     }
 
