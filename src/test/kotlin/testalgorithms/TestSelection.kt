@@ -19,6 +19,6 @@ class TestSelection {
         selection.sort(testChars)
 
         assertTrue(selection.isSorted(testChars))
-        println(testChars.contentToString())
+        selection.show(testChars)
     }
 }
