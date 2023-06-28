@@ -15,8 +15,8 @@ abstract  class Sort<T> {
         array[j] = temp
     }
 
-    fun show(array: Array<Comparable<T>>) {
-        for (item: Comparable<T> in array) {
+    fun show(array: Array<T>) {
+        for (item: T in array) {
             print("$item ")
         }
         println()
